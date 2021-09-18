@@ -1,0 +1,12 @@
+[template]
+  incoming-hooks = ["Contentful"]
+
+[template.environment]
+  BOT_TOKEN = "change me for your secret token"
+  BOT_USERNAME = " bot username without @"
+  API_ID = " Telegram api id"
+  API_HASH = " API HASH OF TELEGRAM "
+  SUDO_USERS = "sudo user id "
+  DURATION_LIMIT = " 50 "
+  SESSION_NAME = " Sessionstring pyrogram "
+  
