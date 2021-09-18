@@ -4,8 +4,8 @@ from time import time
 from pyrogram import Client, emoji, filters
 from pyrogram.types import Message
 
-from MusicKen.config import BOT_USERNAME
-from MusicKen.helpers.filters import command
+from config import BOT_USERNAME
+from helpers.filters import command
 
 START_TIME = datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
