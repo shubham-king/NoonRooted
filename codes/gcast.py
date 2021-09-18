@@ -3,9 +3,9 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from MusicKen.config import SUDO_USERS
-from MusicKen.helpers.filters import command
-from MusicKen.services.callsmusic.callsmusic import client as USER
+from config import SUDO_USERS
+from helpers.filters import command
+from callsmusic.callsmusic import client as USER
 
 
 @Client.on_message(command("gs") & filters.user(SUDO_USERS) & ~filters.edited)
