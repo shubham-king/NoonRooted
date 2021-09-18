@@ -3,20 +3,20 @@ from os import path
 from pyrogram import Client, filters
 from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
-from Music.callsmusic import callsmusic, queues
-from Music.callsmusic.callsmusic import client as USER
-from Music.helpers.admins import get_administrators
+from callsmusic import callsmusic, queues
+from callsmusic.callsmusic import client as USER
+from helpers.admins import get_administrators
 import requests
 import aiohttp
 import youtube_dl
 from youtube_search import YoutubeSearch
-from Music import converter
-from Music.downloaders import youtube
-from Music.config import DURATION_LIMIT
-from Music.helpers.filters import command
-from Music.helpers.decorators import errors
-from Music.helpers.errors import DurationLimitError
-from Music.helpers.gets import get_url, get_file_name
+import converter
+from downloaders import youtube
+from config import DURATION_LIMIT
+from helpers.filters import command
+from helpers.decorators import errors
+from helpers.errors import DurationLimitError
+from helpers.gets import get_url, get_file_name
 import aiofiles
 import ffmpeg
 from PIL import Image, ImageFont, ImageDraw
