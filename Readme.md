@@ -4,13 +4,13 @@
 </p>
 
 
-# Pᴀᴛʀɪᴄɪᴀ•Mᴜsɪᴄ👮
-💡 This is Innexia An Advanced Telegram CHAT Bot For Best AI Experience !! 🤖 
+# INDIAN MUSIC 👮
+
 
 ![logo](https://telegra.ph/file/4cb79a050a314fb747577.jpg)
-#  💡Dᴇᴠᴇʟᴏᴩᴇᴍᴇɴᴛ•Sᴜᴩᴩᴏʀᴛ👥[Here !](https://t.me/patricia_support)
+#  💡SUPPORT HERE👥[Here !](https://t.me/ShubhamMusics)
 
-## Me On Telegram As [💥 Pᴀᴛʀɪᴄɪᴀ 💥](https://t.me/PATRICIA_ROBOT)
+
 
 ## Cᴏᴍᴍᴀɴᴅs
 ```
@@ -40,6 +40,6 @@
 
 ## 💡 How To Host ❓️
 The easiest way to deploy this Bot
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TEAM-PATRICIA/PatriciaMusic2.0"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/shubham-king/IndianMusic"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
  
 
