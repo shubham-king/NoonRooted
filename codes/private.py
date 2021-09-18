@@ -9,32 +9,46 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
+        f"""**🏷️
 
-ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ'ꜱ ᴠᴏɪᴄᴇ ᴄᴀʟʟ. ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ [xᴍᴀʀᴛʏ ꜱᴀʟɪᴍ](https://t.me/Xmartperson).
+ नमस्कार, मैं एक बोट हुं जो आपके ग्रुप में गाना बजा सकता है। और अपका मनोरजन कर सकता हु। \n\n संगीत क्या है : संगीत माधुर्य, सामंजस्य, ताल और समय के तत्वों के माध्यम से एक रचना का निर्माण करने के लिए ध्वनियों को समय पर व्यवस्थित करने की कला है। यह सभी मानव समाजों के सार्वभौमिक सांस्कृतिक पहलुओं में से एक है। ",
 
-ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜꜱɪᴄ ꜰʀᴇᴇʟʏ!**
-        """,
+                        """,
         reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🛠 ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🛠", url="https://github.com/S780821/XMARTY_MUSIC")
-                  ],[
-                    InlineKeyboardButton(
-                        "💬 ɢʀᴏᴜᴘ", url="https://t.me/XMARTY_Support"
-                    ),
-                    InlineKeyboardButton(
-                        "🔊 ᴄʜᴀɴɴᴇʟ", url="https://t.me/XMARTY_SUPPORT"
-                    )
-                ],[ 
-                    InlineKeyboardButton(
-                        "➕ ʏʀʀ ᴍᴜᴊʜᴇ ɴᴀ ʟᴇ ᴊᴀᴏ ᴋʜᴜᴅ ᴋᴀ ʙɴᴀ ʟᴏ ➕", url="https://t.me/XMARTY_MUSIC_BOT?startgroup=true"
-                    )]
-            ]
-        ),
-     disable_web_page_preview=True
-    )
+
+                       [[
+
+                          InlineKeyboardButton(
+
+                             "📀 मुझे ग्रुप में जोड़ें", url="https://t.me/{BOT_USERNAME}?startgroup=true")
+
+                       ],[
+
+                          InlineKeyboardButton(
+
+                             "🌐 सूचनाएं", url="https://t.me/ShubhamMusics")
+
+                       ],[
+
+                          InlineKeyboardButton(
+
+                             "ℹ️ सहायता ", url="https://t.me/Music_Enviroment")
+
+                       ],[
+
+                          InlineKeyboardButton(
+
+                             "🏷️ दोस्तो से बाते ", url="https://t.me/Chatting_Officials"),
+
+                          InlineKeyboardButton(
+
+                             "🎑 Source Code", url="https://github.com/shubham-king/IndianMusic")
+
+                       ]]
+
+                    ))
+     
+    
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
