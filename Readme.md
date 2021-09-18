@@ -38,8 +38,4 @@
 ```
 
 
-## 💡 How To Host ❓️
-The easiest way to deploy this Bot
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/shubham-king/IndianMusic"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
- 
-
+## 💡 Can't be deployed on heroku
