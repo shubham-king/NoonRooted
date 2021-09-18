@@ -4,9 +4,9 @@ from time import time
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 
-from Music.config import BOT_USERNAME
-from Music.helpers.decorators import sudo_users_only
-from Music.helpers.filters import command
+from config import BOT_USERNAME
+from helpers.decorators import sudo_users_only
+from helpers.filters import command
 
 START_TIME = datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
