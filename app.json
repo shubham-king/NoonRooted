@@ -13,8 +13,8 @@
       "description": "A bot token from @BotFather",
       "required": true
     },
-    "BOT_NAME": {
-      "description": "Your MusicPlayer Bot Name.",
+    "BOT_USERNAME": {
+      "description": "Your MusicPlayer Bot username without @.",
       "required": false,
       "value": ""
     },
