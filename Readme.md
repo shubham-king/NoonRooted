@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://app.codacy.com/gh/TEAM-PATRICIA/PatriciaMusic2.0/dashboard?branch=Legacy"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=cyan&logo=codacy&logoColor=white&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/TEAM-PATRICIA/PatriciaMusic2.0"> <img src="https://img.shields.io/github/repo-size/TeamInnexia/innexiaBot?color=cyan&logo=github&logoColor=white&style=for-the-badge" /></a>
+    <a href="https://github.com/shubham-king/IndianMusic"> <img src="https://img.shields.io/github/repo-size/shubham-king/IndianMusic?color=cyan&logo=github&logoColor=white&style=for-the-badge" /></a>
 </p>
 
 
