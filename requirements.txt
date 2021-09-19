@@ -19,6 +19,6 @@ ffmpeg-python
 
 py-tgcalls==0.8.0
 
-git+https://github.com/pyrogram/pyrogram@master
+
 
 httpx==0.13.3
