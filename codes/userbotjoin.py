@@ -18,11 +18,11 @@
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 import asyncio
-from DaisyXMusic.helpers.decorators import authorized_users_only, errors
-from DaisyXMusic.services.callsmusic.callsmusic import client as USER
-from DaisyXMusic.config import SUDO_USERS
+from helpers.decorators import authorized_users_only, errors
+from callsmusic.callsmusic import client as USER
+from config import SUDO_USERS
 
-@Client.on_message(filters.command(["userbotjoin"]) & ~filters.private & ~filters.bot)
+@Client.on_message(filters.command(["vjoin"]) & ~filters.private & ~filters.bot)
 @authorized_users_only
 @errors
 async def addchannel(client, message):
@@ -59,7 +59,7 @@ async def addchannel(client, message):
     )
 
 
-@USER.on_message(filters.group & filters.command(["userbotleave"]))
+@USER.on_message(filters.group & filters.command(["vleave"]))
 @authorized_users_only
 async def rem(USER, message):
     try:
