@@ -1,5 +1,4 @@
-pyrogram 
-pytgcalls
+pyrogram
 TgCrypto
 py-tgcalls==0.5.2
 python-dotenv
@@ -15,10 +14,7 @@ ffmpeg
 Pillow
 ujson
 
+TgCrypto
 ffmpeg-python
-
-py-tgcalls
-
-
-
-httpx==0.13.3
+git+https://github.com/pyrogram/pyrogram@master
+pytgcalls==3.0.0.dev10
