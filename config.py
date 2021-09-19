@@ -11,6 +11,8 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 
+PM_PERMIT = getenv("PM_PERMIT", "ENABLE")
+
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
 
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
