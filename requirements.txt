@@ -17,7 +17,7 @@ ujson
 
 ffmpeg-python
 
-py-tgcalls==0.8.0
+py-tgcalls
 
 
 
