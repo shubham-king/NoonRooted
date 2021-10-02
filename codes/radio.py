@@ -25,7 +25,7 @@ RADIO_CALL = {}
 @Client.on_message(filters.command("radio"))
 async def stream(client, m: Message):
     if len(m.command) < 2:
-        await m.reply_text('`🚫 You forgot to enter a Stream URL`')
+        await m.reply_text('`🚫 अपने stream url नहीं दिया`')
         return
      
     query = m.command[1]
@@ -52,7 +52,7 @@ async def stream(client, m: Message):
                 ytstreamlink = f['url']
             station_stream_url = ytstreamlink
         except Exception as e:
-            await message.reply_text(f'**⚠️ Error** \n{e}')
+            await message.reply_text(f'**⚠️ कुछ गलत हुआ ** \n{e}')
             print(e)
     else:
         station_stream_url = query
@@ -71,20 +71,20 @@ async def stream(client, m: Message):
     chat_id = m.chat.id    
     if chat_id in RADIO_CALL:
         await asyncio.sleep(1)
-        await radiostrt.edit(f'📻 Started **[Live Streaming]({query})** in `{chat_id}`', disable_web_page_preview=True)
+        await radiostrt.edit(f'📻 सुरू हो चुका **[Live Streaming]({query})** in `{chat_id}`', disable_web_page_preview=True)
     else:
-        await radiostrt.edit(f'`📻 Radio is Starting...`')
+        await radiostrt.edit(f'`📻 Radio को सुरु कर दिया गया ...`')
         await asyncio.sleep(3)
         group_call = GroupCall(app, input_filename, path_to_log_file='')
         await group_call.start(chat_id)
         RADIO_CALL[chat_id] = group_call
-        await radiostrt.edit(f'📻 Started **[Live Streaming]({query})** in `{chat_id}`', disable_web_page_preview=True)
+        await radiostrt.edit(f'📻 सुरु हो गया  **[Live Streaming]({query})** in `{chat_id}`', disable_web_page_preview=True)
     
         
 @Client.on_message(filters.command("stop"))
 async def stopradio(client, m: Message):
     chat_id = m.chat.id
-    smsg = await m.reply_text(f'⏱️ Stopping...')
+    smsg = await m.reply_text(f'⏱️ रोक दिया गया ...')
     process = FFMPEG_PROCESSES.get(m.chat.id)
     if process:
         try:
@@ -95,6 +95,6 @@ async def stopradio(client, m: Message):
     if chat_id in RADIO_CALL:
         await RADIO_CALL[chat_id].stop()
         RADIO_CALL.pop(chat_id)
-        await smsg.edit(f'**⏹ Stopped Streaming!**')
+        await smsg.edit(f'**⏹ रोक दिया गया **')
     else:
         await smsg.edit(f'`Nothing is Streaming!`')
