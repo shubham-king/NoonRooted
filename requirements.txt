@@ -1,5 +1,5 @@
 pyrogram 
-pytgcalls
+pytgcalls==8
 TgCrypto
 py-tgcalls==0.5.2
 python-dotenv
