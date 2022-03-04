@@ -9,7 +9,7 @@ async def gstart(_, message: Message):
       reply_markup=InlineKeyboardMarkup(
                        [[
                           InlineKeyboardButton(
-                             "🌐 सूचनाएं", url="https://t.me/ShubhamMusics")
+                             "🌐 सूचनाएं", url="https://t.me/crystalbots")
                        ],[
                           InlineKeyboardButton(
                              "🎑 Source Code", url="https://github.com/shubham-king/IndianMusic")
