@@ -17,7 +17,7 @@ async def start(_, message: Message):
                              "📀 मुझे ग्रुप में जोड़ें", url="https://t.me/{bn}?startgroup=true")
                        ],[
                           InlineKeyboardButton(
-                             "🌐 सूचनाएं", url="https://t.me/ShubhamMusics")
+                             "🌐 सूचनाएं", url="https://t.me/crystalbots")
                        ],[
                           InlineKeyboardButton(
                              "ℹ️ सहायता ", url="https://t.me/Music_Enviroment")
@@ -35,7 +35,7 @@ async def gstart(_, message: Message):
       reply_markup=InlineKeyboardMarkup(
                        [[
                           InlineKeyboardButton(
-                             "🌐 सूचनाएं", url="https://t.me/ShubhamMusics")
+                             "🌐 सूचनाएं", url="https://t.me/crystalbots")
                        ],[
                           InlineKeyboardButton(
                              "ℹ️ सहायता ", url="https://t.me/Music_Enviroment")
